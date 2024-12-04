@@ -1,50 +1,56 @@
-<table>
-	<tr>
-		<th>
-			Intestazione colonna 1
-		</th>
-	</tr>
-	<tr>
-		<td>
-			<p>Riga 1, colonna 1</p>
-		</td>
-		<td>
-			<p id="testo-giallo">Riga 1, colonna 2</p>
-		</td>
-		<td>
-			<p class="testo-verde">Riga 1, colonna 3</p>
-		</td>
-		<td>
-			<p>Riga 1, colonna 4</p>
-		</td>
-	</tr>
-	<tr>
-		<td>
-			<p class="testo-verde">Riga 2, colonna 1</p>
-		</td>
-	</tr>
-</table>
-<style>
-	table {
-		border-style: solid;
-		border-width: 1px;
-		border-color: black;
-		
-	}
-	
-	td, th {
-		border-style: dashed;
-		border-width: 1px;
-		border-color: blue;
-	}
-	
-	.testo-verde {
-		
-		color: #00FF00;
-	}
-	
-	#testo-giallo {
-		
-		color: yellow;
-	}
-</style>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabella Arcobaleno</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        .rosso { color: red; }
+        .arancione { color: orange; }
+        .giallo { color: yellow; }
+        .verde { color: green; }
+        .azzurro { color: lightblue; }
+        .blu { color: blue; }
+        .viola { color: purple; }
+        .indaco { color: indigo; }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="rosso">Rosso</td>
+            <td class="arancione">Arancione</td>
+            <td class="giallo">Giallo</td>
+            <td class="verde">Verde</td>
+        </tr>
+        <tr>
+            <td class="azzurro">Azzurro</td>
+            <td class="blu">Blu</td>
+            <td class="viola">Viola</td>
+            <td class="indaco">Indaco</td>
+        </tr>
+        <tr>
+            <td class="rosso">Rosso</td>
+            <td class="arancione">Arancione</td>
+            <td class="giallo">Giallo</td>
+            <td class="verde">Verde</td>
+        </tr>
+        <tr>
+            <td class="azzurro">Azzurro</td>
+            <td class="blu">Blu</td>
+            <td class="viola">Viola</td>
+            <td class="indaco">Indaco</td>
+        </tr>
+    </table>
+</body>
+</html>
