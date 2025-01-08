@@ -1,0 +1,232 @@
+<h3><h1 style="color:blue;"> Capitolo 3 </h1></h3>
+
+
+
+ <h3> <a href="#CODIFICHE"> codifiche </a> </h3>
+ <h3> <a href="#CODIFICA delle IMG"> CODIFICA delle immagini </a> </h3>
+ <h3> <a href="#Occupazione di memoria"> Occupazione di memoria delle immagini  </a> </h3>
+ <h3> <a href="#codifiche audio e numeriche"> Codifiche audio e numeriche </a> </h3>
+
+
+<h3><h1 style="color:blue;"> CODIFICHE </h1></h3>  <h1 id="CODIFICHE"> </h1>
+
+
+
+<img src="1imgfcap3.jpg">
+
+<h3>Le codifiche sono dei metodi che servono per trasformare un'informazione in un formato che può essere facilmente memorizzato, trasmesso o gestito da un computer.
+  In informatica, si usano per rappresentare dati come numeri, testi o immagini.
+  Esistono diversi tipi di codifica:
+ <ul>
+ <li> Codifica binaria: Ogni dato è trasformato in una sequenza di 0 e 1.
+   Questo perché i computer funzionano con il sistema binario, che è fatto solo di due numeri: 0 e 1. Per esempio, la lettera "A" in codice binario diventa "01000001". </li>
+
+ <li>Codifica ASCII: È un sistema di codifica che associa ogni carattere (lettera, numero, simbolo) a un numero.
+   Per esempio, nella codifica ASCII, la lettera "A" è rappresentata dal numero 65. </li> 
+
+  <li>Codifica Unicode: È una versione più moderna della codifica che include simboli di molte lingue diverse.
+   Ad esempio, la lettera "A" in Unicode è rappresentata come U+0041, ma ci sono anche simboli di lingue asiatiche, emoticon, e altro.  </li>
+
+<li> Codifica delle immagini: Le immagini vengono codificate in formati come JPG, PNG o GIF.
+   Questi formati usano metodi per comprimere i dati e ridurre lo spazio necessario per memorizzarli. </li>
+
+  <li> Codifica per la trasmissione dei dati: A volte i dati devono essere modificati per essere inviati attraverso la rete senza errori.
+   Per esempio, quando invii un messaggio via Internet, il testo viene codificato in un formato che può viaggiare tra i vari dispositivi e poi decodificato per essere letto.</li></ul>
+
+In generale, la codifica è essenziale perché permette di convertire l'informazione in una forma che può essere facilmente utilizzata dai computer, dai programmi e dalle reti.</h3>
+
+
+
+
+<h3><h1 style="color:blue;"> CODIFICA delle immagini </h1></h3>    <h1 id="CODIFICA delle IMG"> </h1>
+
+<h3>Codifica delle immagini. Le immagini possono essere memorizzate in forma numerica (digitale) suddividendole in milioni di punti, 
+	per ognuno dei quali si definisce il colore in termini numerici. 
+	Quindi con 1 bit per pixel è possibile codificare assenza o presenza di nero.</h3>
+<br>
+
+
+
+
+	
+ <table>
+	<tr>
+		<th>
+		IMMAGINE
+		</th>
+  	<th>
+RISOLUZIONE
+		</th>
+  	<th>
+PROFONDITA' 
+    BIT
+		</th>
+  	<th>
+			OCCUPAZIONE DI MEMORIA
+		</th>
+	</tr>
+	<tr>
+		<td>
+			B/N
+		</td>
+		<td>
+			1024X740
+		</td>
+		<td>
+			1
+		</td>
+		<td>
+			1024X740X1
+		</td>
+	</tr>
+	<tr>
+		<td>
+GRIGIO
+		</td>
+		<td>
+1024X740
+		</td>
+		<td>
+8
+		</td>
+		<td>
+1024X740X8bit
+		</td>
+		
+	</tr>
+	 <tr>
+		<td>
+RADIOGRAFIE
+		</td>
+		<td>
+1024X740
+		</td>
+		<td>
+16
+		</td>
+		<td>
+1024X740X16bit
+		</td>
+		
+	</tr>
+	 
+<tr>
+		<td>
+COLORE (RGB)
+		</td>
+		<td>
+1024X740
+		</td>
+		<td>
+24
+		</td>
+		<td>
+1024X740X24bit
+		</td>
+	 <tr>
+		<td>
+COLORE (AQ)
+		</td>
+		<td>
+1024X740
+		</td>
+		<td>
+			48
+		</td>
+		<td>
+1024X740X48bit
+		</td>
+		
+	</tr>
+	
+		
+	<table>
+<style>
+	table {
+		border-style: solid;
+		border-width: 1px;
+		border-color: black;
+		border-collapse: collapse; 
+	}
+	
+	td, th {
+		border-style: solid;
+		border-width: 1px;
+		border-color: black;
+  border-colapse:colapse;
+	}
+	
+	
+	
+
+</style>   <img src="4imgfcap3.jpg">
+
+
+
+
+
+<h3><h1 style="color:blue;"> Occupazione di MEMORIA DELLE IMMAGINI </h1></h3>  <h1 id="Occupazione di memoria"> </h1>
+
+<img src="2imgfcap3,jpg">
+	
+<h3> Profondità di colore (bit per pixel - bpp)
+La profondità di colore indica quanti bit vengono utilizzati per rappresentare il colore di un singolo pixel.
+<ul>	
+<li>1 bpp (bianco e nero): ogni pixel è rappresentato da 1 bit, che può essere 0 (bianco) o 1 (nero).</li>
+<li>8 bpp (grayscale): ogni pixel è rappresentato da 8 bit, che consentono 256 tonalità di grigio.</li>
+<li>24 bpp (RGB): ogni pixel è rappresentato da 24 bit (8 per ciascun canale di colore: rosso, verde e blu), che permettono 16,7 milioni di colori.</li>
+<li>32 bpp (RGBA): simile a 24 bpp, ma con un canale aggiuntivo per la trasparenza (alfa).</li>
+</ul> </h3>
+	<br>   <img src="3imgfcap3.jgp">
+		<h3> 
+La memoria occupata da un'immagine può essere calcolata utilizzando la seguente formula:
+
+Memoria (in byte)
+=
+Larghezza
+×
+Altezza
+×
+Profondit
+a
+ˋ
+ di colore (in byte)
+Memoria (in byte)=Larghezza×Altezza×Profondit 
+a
+ˋ
+  di colore (in byte)
+Profondità di colore in byte: Se la profondità è 24 bpp, ogni pixel occupa 3 byte (8 bit per canale, e 3 canali in totale).
+Esempio:
+Per un'immagine di 1024x768 pixel con profondità di 24 bpp:
+
+Memoria
+=
+1024
+×
+768
+×
+3
+ byte
+=
+2.359.296
+ byte
+≈
+2
+,
+36
+ MB
+Memoria=1024×768×3 byte=2.359.296 byte≈2,36 MB  </h3> 
+
+
+
+
+
+
+
+ 
+<h3><h1 style="color:blue;"> Codifiche audio e video </h1></h3>  <h1 id="codificheaudio e video"> </h1>
+<h3></h3>
+
+Le codifiche audio permettono di comprimere i dati sonori, riducendo la dimensione del file, con opzioni lossy (MP3, AAC, Ogg) e lossless (FLAC, WAV).
+Le codifiche video comprimono i dati video, con formati lossy come H.264, H.265, VP9, e formati lossless come ProRes.
+La compressione lossy è molto comune per ridurre la dimensione dei file e permettere lo streaming efficiente, mentre la compressione lossless è preferita quando la qualità deve essere mantenuta senza compromessi.
