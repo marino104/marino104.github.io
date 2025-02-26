@@ -10,23 +10,39 @@
             color: #fff;
             text-align: center;
             padding: 50px;
+            margin: 0;
         }
         .container {
-            max-width: 800px;
+            max-width: 1200px;
             margin: auto;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 10px;
-            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 15px;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
             animation: fadeIn 1s ease-in-out;
         }
         h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
         p {
-            font-size: 1.2em;
-            line-height: 1.6;
+            font-size: 1.4em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .box {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
@@ -41,7 +57,20 @@
             Dopo gli eventi sconvolgenti del capitolo precedente, il protagonista si trova di fronte a una scelta cruciale.
             Il destino del mondo è nelle sue mani e ogni decisione potrebbe cambiare il corso della storia per sempre.
         </p>
+        <div class="content">
+            <div class="box">
+                <h2>Il Passato</h2>
+                <p>Ricordi di un'epoca ormai perduta, lezioni apprese e segreti svelati.</p>
+            </div>
+            <div class="box">
+                <h2>Il Presente</h2>
+                <p>Il momento della scelta è giunto, il tempo stringe e ogni mossa è cruciale.</p>
+            </div>
+            <div class="box">
+                <h2>Il Futuro</h2>
+                <p>Un nuovo cammino si apre davanti, pieno di speranze e incognite.</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
-
