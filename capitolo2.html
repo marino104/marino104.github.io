@@ -1,1 +1,80 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitolo 2 - Fondamenti di Programmazione</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: #ff5722;
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #222;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        h2 {
+            color: #ff5722;
+        }
+        code {
+            background: #333;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            border-radius: 5px;
+        }
+        button {
+            background: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>Capitolo 2: Fondamenti di Programmazione</header>
+    
+    <main>
+        <h2>2.1 Introduzione alla Programmazione</h2>
+        <p>La programmazione è il processo di scrittura di istruzioni che un computer può eseguire. I linguaggi di programmazione più comuni includono Python, JavaScript e C++.</p>
+        
+        <h2>2.2 Il primo programma in JavaScript</h2>
+        <p>Prova a eseguire il seguente codice JavaScript per visualizzare un messaggio nella console.</p>
+        <code>console.log('Ciao, Mondo!');</code>
+        
+        <h2>2.3 Interattività con JavaScript</h2>
+        <p>Clicca il pulsante qui sotto per eseguire un semplice script che modifica il contenuto della pagina:</p>
+        <button onclick="changeText()">Cliccami!</button>
+        <div id="output">Testo iniziale...</div>
+        
+        <script>
+            function changeText() {
+                document.getElementById('output').innerText = 'Hai cliccato il pulsante!';
+            }
+        </script>
+    </main>
+</body>
+</html>
 
