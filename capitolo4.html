@@ -13,36 +13,46 @@
             margin: 0;
         }
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: auto;
-            padding: 40px;
-            background: rgba(0, 0, 0, 0.8);
-            border-radius: 15px;
-            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.6);
+            padding: 60px;
+            background: rgba(0, 0, 0, 0.85);
+            border-radius: 20px;
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.7);
             animation: fadeIn 1s ease-in-out;
         }
         h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
+            font-size: 3.5em;
+            margin-bottom: 30px;
             text-transform: uppercase;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
         }
         p {
-            font-size: 1.4em;
-            line-height: 1.8;
-            margin-bottom: 20px;
+            font-size: 1.6em;
+            line-height: 2;
+            margin-bottom: 30px;
         }
         .content {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
-            gap: 20px;
+            gap: 30px;
         }
         .box {
             flex: 1;
+            min-width: 300px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
+        }
+        .extra-box {
+            flex: 1;
+            min-width: 300px;
             background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.3);
         }
         @keyframes fadeIn {
             from { opacity: 0; transform: translateY(-20px); }
@@ -69,6 +79,14 @@
             <div class="box">
                 <h2>Il Futuro</h2>
                 <p>Un nuovo cammino si apre davanti, pieno di speranze e incognite.</p>
+            </div>
+            <div class="extra-box">
+                <h2>Le Conseguenze</h2>
+                <p>Ogni azione avrà un impatto duraturo sul mondo e sui suoi abitanti.</p>
+            </div>
+            <div class="extra-box">
+                <h2>La Visione</h2>
+                <p>Un sogno di pace e progresso che il protagonista dovrà realizzare.</p>
             </div>
         </div>
     </div>
