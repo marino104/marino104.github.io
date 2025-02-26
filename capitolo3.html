@@ -4,31 +4,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capitolo 3: Il Viaggio nel Tempo</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
         }
         h1, h2, h3 {
-            color: #333;
+            color: #4caf50;
+            font-family: 'Segoe UI', sans-serif;
         }
         .chapter-title {
             text-align: center;
-            margin-top: 50px;
+            margin-top: 40px;
+            animation: fadeIn 2s ease-out;
+        }
+        .chapter-title h1 {
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        .chapter-title p {
+            font-style: italic;
+            font-size: 1.2em;
         }
         .section {
-            margin-bottom: 30px;
+            margin: 40px 0;
+            transition: transform 0.3s ease-in-out;
+        }
+        .section:hover {
+            transform: translateY(-10px);
         }
         .section p {
             text-align: justify;
             text-indent: 30px;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        .section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+            font-weight: 700;
         }
         .section img {
             max-width: 100%;
             height: auto;
             display: block;
-            margin: 20px auto;
+            margin-top: 20px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .section button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .section button:hover {
+            background-color: #45a049;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
         }
     </style>
 </head>
@@ -42,17 +89,12 @@
     <div class="section">
         <h2>3.1 L'inizio di un nuovo viaggio</h2>
         <p>Era una giornata grigia quando il professor Rossi scoprì un antico manoscritto, nascosto tra le pagine di un vecchio libro di storia. Questo manoscritto conteneva informazioni che avrebbero cambiato il corso della storia e aperto le porte di un nuovo mondo: il viaggio nel tempo.</p>
-        <p>Il professor Rossi, da sempre affascinato dalla scienza, iniziò a studiare attentamente le scritture. Le parole erano criptiche, ma non gli sfuggì una cosa importante: "Il portale è aperto a chi ha il coraggio di attraversarlo".</p>
+        <p>Il professor Rossi, da sempre affascinato dalla scienza, iniziò a studiare attentamente le scritture. Le parole erano criptiche, ma non gli sfuggì una cosa importante: "Attraverso il portale temporale, si può esplorare ogni epoca e ogni luogo". Questo messaggio misterioso lo spinse a intraprendere una ricerca senza precedenti, spinto dalla curiosità e dal desiderio di scoprire come quel portale avrebbe potuto cambiare il destino dell'umanità.</p>
+        <button onclick="alert('Hai attivato il portale temporale!')">Attiva il Portale</button>
     </div>
 
     <div class="section">
         <h2>3.2 La scoperta del portale</h2>
-        <p>Con il passare dei giorni, il professor Rossi riuscì a decifrare il misterioso codice che descriveva il portale temporale. La chiave per aprirlo era nascosta in un esperimento scientifico che si sarebbe svolto nei laboratori del vecchio istituto.</p>
-        <p>Il portale, secondo le istruzioni, avrebbe permesso di viaggiare attraverso il tempo, ma solo per un periodo limitato. Un'idea eccitante, ma che portava con sé grandi rischi. Rossi decise di provare.</p>
-        <img src="portal.jpg" alt="Immagine del portale temporale">
-
-    </div>
-
-    <div class="section">
-        <h2>3.3 Il primo viaggio</h2>
-        <p>Quando finalmente il portale fu attivato, un vortice di luci e colori avvolse il professor Rossi, catapultandolo nel passato. Si trovò
+        <p>Un mese dopo, in un vecchio laboratorio nascosto nella cantina della sua università, il professor Rossi e il suo assistente, Marco, avevano finalmente messo insieme tutti i pezzi del puzzle. Il portale temporale era nascosto in un vecchio orologio, un manufatto che sembrava insignificante ma che in realtà conteneva la chiave per viaggiare nel tempo.</p>
+        <p>Con una combinazione di leve e ingranaggi, l'orologio si aprì, rivelando un piccolo vortice di luce blu che emetteva un suono misterioso, come un sussurro proveniente da un'altra dimensione. Marco, perplesso ma affascinato, guardò il professor Rossi e disse: "Pensi che funzioni davvero?".</p>
+        <p>Il professor Rossi annuì, gli occhi pieni di eccitazione. "Dobbiamo provarlo, Marco. Non possiamo lasciarc
