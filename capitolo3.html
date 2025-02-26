@@ -1,64 +1,108 @@
 <html lang="it">
-            z-index: -1;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitolo 3: Il Viaggio nel Tempo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #f1f1f1;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        h1, h2, h3 {
+            color: #4caf50;
+            font-family: 'Segoe UI', sans-serif;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
         }
 
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        /* Footer */
-        .footer {
+        .chapter-title {
             text-align: center;
             margin-top: 50px;
-            font-size: 1.2em;
-            color: #aaa;
+            animation: fadeIn 3s ease-out, slideUp 1.5s ease-out;
+            transform-origin: bottom;
         }
-    </style>
-</head>
-<body>
+        .chapter-title h1 {
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+        .chapter-title p {
+            font-size: 1.4em;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
 
-    <div class="background-animation"></div>
+        .writing-effect {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: .15em solid #4caf50;
+            width: 0;
+            animation: typing 4s steps(30) 1s forwards, blink 0.75s step-end infinite;
+        }
 
-    <div class="chapter-title">
-        <h1>Capitolo 3: <span class="writing-effect">Il Viaggio nel Tempo</span></h1>
-        <p><em>Un'avventura attraverso epoche passate e future</em></p>
-    </div>
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
 
-    <div class="section parallax">
-        <img src="https://via.placeholder.com/1920x1080" alt="Viaggio nel Tempo">
-        <h2>3.1 L'inizio di un nuovo viaggio</h2>
-        <p>Era una giornata grigia quando il professor Rossi scoprì un antico manoscritto, nascosto tra le pagine di un vecchio libro di storia. Questo manoscritto conteneva informazioni che avrebbero cambiato il corso della storia e aperto le porte di un nuovo mondo: il viaggio nel tempo.</p>
-        <p>Il professor Rossi, da sempre affascinato dalla scienza, iniziò a studiare attentamente le scritture. Le parole erano criptiche, ma non gli sfuggì una cosa importante: "Attraverso il portale temporale, si può esplorare ogni epoca e ogni luogo". Questo messaggio misterioso lo spinse a intraprendere una ricerca senza precedenti, spinto dalla curiosità e dal desiderio di scoprire come quel portale avrebbe potuto cambiare il destino dell'umanità.</p>
-        <button onclick="alert('Hai attivato il portale temporale!')">Attiva il Portale</button>
-    </div>
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
 
-    <div class="section">
-        <h2>3.2 La scoperta del portale</h2>
-        <p>Un mese dopo, in un vecchio laboratorio nascosto nella cantina della sua università, il professor Rossi e il suo assistente, Marco, avevano finalmente messo insieme tutti i pezzi del puzzle. Il portale temporale era nascosto in un vecchio orologio, un manufatto che sembrava insignificante ma che in realtà conteneva la chiave per viaggiare nel tempo.</p>
-        <p>Con una combinazione di leve e ingranaggi, l'orologio si aprì, rivelando un piccolo vortice di luce blu che emetteva un suono misterioso, come un sussurro proveniente da un'altra dimensione. Marco, perplesso ma affascinato, guardò il professor Rossi e disse: "Pensi che funzioni davvero?".</p>
-        <p>Il professor Rossi annuì, gli occhi pieni di eccitazione. "Dobbiamo provarlo, Marco. Non possiamo lasciarci sfuggire questa opportunità." Con una pressione della mano, il vortice si espanse, e i due uomini si trovarono catapultati in un'altra epoca.</p>
-    </div>
+        .parallax {
+            position: relative;
+            overflow: hidden;
+        }
+        .parallax img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transform: scale(1.1);
+            transition: transform 1s ease-out;
+        }
+        .parallax:hover img {
+            transform: scale(1.2);
+        }
 
-    <div class="section parallax">
-        <img src="https://via.placeholder.com/1920x1080" alt="Scoperta del Portale">
-        <h2>3.3 Un salto nel passato</h2>
-        <p>Il portale li aveva condotti all'inizio del XX secolo, in una città che sembrava sospesa nel tempo. La gente camminava per le strade vestita con abiti di un'epoca ormai lontana, e i veicoli a motore erano ancora un sogno futuristico.</p>
-        <p>Il professor Rossi e Marco si avventurarono per le vie di questa nuova realtà, osservando con stupore ogni dettaglio. La città sembrava vibrante, ma anche fragile, come se fosse in equilibrio tra passato e futuro.</p>
-        <p>"Questo è incredibile", disse Marco, mentre guardava una vecchia carrozza trainata da cavalli che attraversava la piazza principale. "Siamo davvero nel passato!"</p>
-        <p>Il professor Rossi sorrise, ma il suo sguardo era serio. "Abbiamo solo un tempo limitato per esplorare e raccogliere informazioni. Dobbiamo essere cauti, ogni cambiamento potrebbe alterare la linea temporale.".</p>
-    </div>
+        .section {
+            margin: 50px 0;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .section:hover {
+            transform: translateY(-10px);
+        }
+        .section p {
+            text-align: justify;
+            text-indent: 30px;
+            font-size: 1.1em;
+            margin-bottom: 15px;
+        }
+        .section h2 {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 10px;
+        }
 
-    <div class="footer">
-        <p>&copy; 2025 Capitolo 3 - Il Viaggio nel Tempo. Tutti i diritti riservati.</p>
-    </div>
-
-</body>
-</html>
+        .section b
