@@ -1,112 +1,133 @@
-
+<!DOCTYPE html>
 <html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capitolo 2 - Codici Fighi</title>
+    <title>Capitolo 3 - La Scoperta del Mistero</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #2c3e50;
-            color: white;
+        * {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            box-sizing: border-box;
         }
-
-        h1 {
-            text-align: center;
-            font-size: 3em;
-            margin-top: 50px;
-            animation: fadeIn 2s ease-out;
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            height: 100vh;
         }
-
-        .code {
-            background-color: #34495e;
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: white;
             padding: 20px;
-            margin: 20px;
+            height: 100vh;
+            position: fixed;
+        }
+        .sidebar h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px 0;
+            border-bottom: 1px solid #34495e;
+            font-size: 1.1rem;
+        }
+        .sidebar ul li a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s ease;
+        }
+        .sidebar ul li a:hover {
+            color: #f39c12;
+        }
+        .content {
+            margin-left: 270px;
+            padding: 40px;
+            width: calc(100% - 270px);
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 3rem;
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #2980b9;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .quote {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+        }
+        .cta {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #f39c12;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
             border-radius: 5px;
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 1.2em;
-            color: #ecf0f1;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            animation: slideIn 3s ease-out infinite alternate;
+            transition: background-color 0.3s ease;
         }
-
-        .code span {
-            color: #1abc9c;
-            animation: blink 1.5s step-start infinite;
+        .cta:hover {
+            background-color: #e67e22;
         }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
+        .image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 30px;
+            transition: transform 0.3s ease;
         }
-
-        @keyframes slideIn {
-            0% {
-                transform: translateX(-100%);
-            }
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        @keyframes blink {
-            50% {
-                opacity: 0;
-            }
-        }
-
-        .moving-text {
-            position: absolute;
-            top: 100px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 2em;
-            animation: moveText 5s linear infinite;
-        }
-
-        @keyframes moveText {
-            0% {
-                top: 100px;
-                left: 50%;
-            }
-            50% {
-                top: 300px;
-                left: 10%;
-            }
-            100% {
-                top: 100px;
-                left: 90%;
-            }
+        .image:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-
-    <h1>Capitolo 2: Codici Fighi in Movimento</h1>
-
-    <div class="moving-text">Questo testo si muove!</div>
-
-    <div class="code">
-        <p>
-            <span>&lt;!DOCTYPE html&gt;</span><br>
-            <span>&lt;html lang="it"&gt;</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;head&gt;</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;title&gt;Capitolo 2&lt;/title&gt;</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;/head&gt;</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;body&gt;</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;h1&gt;Benvenuti nel Capitolo 2&lt;/h1&gt;</span><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span>&lt;/body&gt;</span><br>
-            <span>&lt;/html&gt;</span>
-        </p>
+    <div class="sidebar">
+        <h2>Indice Capitolo</h2>
+        <ul>
+            <li><a href="#">Introduzione</a></li>
+            <li><a href="#">Le Prime Scoperte</a></li>
+            <li><a href="#">Il Mistero</a></li>
+            <li><a href="#">Conclusioni</a></li>
+        </ul>
     </div>
 
+    <div class="content">
+        <h1>Capitolo 3: La Scoperta del Mistero</h1>
+        <h2>Un Nuovo Enigma</h2>
+
+        <p>Quando <span style="font-weight: bold; color: #e74c3c;">Andrea</span> si trovò davanti alla vecchia mappa, capì che stava per iniziare un'avventura mai vissuta prima. La mappa, strappata e consumata dal tempo, mostrava un luogo misterioso che nessuno aveva mai osato esplorare.</p>
+        
+        <p class="quote">"Ogni passo che faccio mi avvicina a qualcosa di più grande di quanto avrei mai potuto immaginare." - Andrea</p>
+
+        <p>Con il cuore che batteva forte, Andrea decise di seguire le indicazioni della mappa, ignorando i pericoli che potevano nascondersi dietro ogni angolo. Si sentiva come un moderno esploratore, pronto a scoprire antichi segreti sepolti nel tempo.</p>
+
+        <a href="#" class="cta">Continua il Viaggio</a>
+
+        <img src="https://via.placeholder.com/1200x600" alt="Mistero e Avventura" class="image">
+    </div>
 </body>
 </html>
 
