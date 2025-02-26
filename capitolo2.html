@@ -2,101 +2,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capitolo 2 - Fondamenti di Programmazione</title>
+    <title>Capitolo 2</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
+            font-family: Arial, sans-serif;
             background-color: #121212;
-            color: #fff;
-            line-height: 1.6;
-            text-align: center;
-        }
-        header {
-            background: linear-gradient(90deg, #ff5722, #ff9800);
-            padding: 20px;
-            text-align: center;
-            font-size: 28px;
-            font-weight: bold;
             color: white;
-            animation: fadeIn 2s ease-in-out;
+            text-align: center;
+            padding: 50px;
         }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #222;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
-            animation: slideUp 1.5s ease-out;
+        .title {
+            font-size: 2.5em;
+            opacity: 0;
+            transform: translateY(-20px);
+            animation: fadeInDown 1.5s ease-out forwards;
         }
-        h2 {
-            color: #ff9800;
+        .content {
+            opacity: 0;
+            animation: fadeIn 2s ease-in forwards;
+            animation-delay: 1.5s;
         }
-        code {
-            background: #333;
-            padding: 5px;
-            border-radius: 5px;
-        }
-        #output {
-            margin-top: 20px;
-            padding: 10px;
-            background: #333;
-            border-radius: 5px;
-            transition: transform 0.5s ease-in-out;
-        }
-        button {
-            background: #ff9800;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            margin-top: 10px;
-            border-radius: 5px;
-            font-size: 18px;
-            transition: transform 0.2s ease;
-        }
-        button:hover {
-            transform: scale(1.1);
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideUp {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
     </style>
 </head>
 <body>
-    <header>Capitolo 2: Fondamenti di Programmazione</header>
-    
-    <main>
-        <h2>2.1 Introduzione alla Programmazione</h2>
-        <p>La programmazione è il processo di scrittura di istruzioni che un computer può eseguire. I linguaggi di programmazione più comuni includono Python, JavaScript e C++.</p>
-        
-        <h2>2.2 Il primo programma in JavaScript</h2>
-        <p>Prova a eseguire il seguente codice JavaScript per visualizzare un messaggio nella console.</p>
-        <code>console.log('Ciao, Mondo!');</code>
-        
-        <h2>2.3 Interattività con JavaScript</h2>
-        <p>Clicca il pulsante qui sotto per vedere un'animazione e modificare il testo:</p>
-        <button onclick="changeText()">Cliccami!</button>
-        <div id="output">Testo iniziale...</div>
-        
-        <script>
-            function changeText() {
-                let output = document.getElementById('output');
-                output.innerText = 'Hai cliccato il pulsante!';
-                output.style.transform = 'scale(1.2)';
-                setTimeout(() => {
-                    output.style.transform = 'scale(1)';
-                }, 500);
-            }
-        </script>
-    </main>
+    <h1 class="title">Capitolo 2: L'Inizio del Viaggio</h1>
+    <p class="content">Il viaggio era appena iniziato, ma già l'aria era carica di mistero e aspettativa...</p>
 </body>
 </html>
 
