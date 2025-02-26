@@ -3,130 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capitolo 3 - La Scoperta del Mistero</title>
+    <title>Capitolo 3 - Un Mondo Sconosciuto</title>
     <style>
+        /* Resettare i margini e i padding */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Verdana', sans-serif;
+            background-color: #ecf0f1;
+            color: #34495e;
             display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #2980b9, #8e44ad);
+            animation: gradientAnim 15s ease infinite;
         }
-        .sidebar {
-            width: 250px;
-            background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            height: 100vh;
-            position: fixed;
+
+        @keyframes gradientAnim {
+            0% {
+                background: linear-gradient(135deg, #2980b9, #8e44ad);
+            }
+            50% {
+                background: linear-gradient(135deg, #8e44ad, #2980b9);
+            }
+            100% {
+                background: linear-gradient(135deg, #2980b9, #8e44ad);
+            }
         }
-        .sidebar h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .sidebar ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .sidebar ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid #34495e;
-            font-size: 1.1rem;
-        }
-        .sidebar ul li a {
-            text-decoration: none;
-            color: white;
-            transition: color 0.3s ease;
-        }
-        .sidebar ul li a:hover {
-            color: #f39c12;
-        }
-        .content {
-            margin-left: 270px;
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
             padding: 40px;
-            width: calc(100% - 270px);
             background-color: white;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
         }
+
         h1 {
             font-size: 3rem;
-            color: #34495e;
+            color: #2c3e50;
             margin-bottom: 20px;
         }
+
         h2 {
             font-size: 2rem;
-            margin-bottom: 15px;
             color: #2980b9;
-        }
-        p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 20px;
-        }
-        .quote {
-            font-style: italic;
-            color: #7f8c8d;
             margin-bottom: 30px;
         }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
         .cta {
             display: inline-block;
             padding: 12px 25px;
             background-color: #f39c12;
             color: white;
             text-decoration: none;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             border-radius: 5px;
-            transition: background-color 0.3s ease;
+            transition: transform 0.3s ease, background-color 0.3s ease;
         }
+
         .cta:hover {
             background-color: #e67e22;
+            transform: scale(1.05);
         }
-        .image {
+
+        .interactive {
+            display: inline-block;
+            background-color: #34495e;
+            padding: 10px;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .interactive:hover {
+            background-color: #1abc9c;
+        }
+
+        .image-container {
+            margin-top: 40px;
+        }
+
+        img {
             width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-        .image:hover {
+
+        img:hover {
             transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <h2>Indice Capitolo</h2>
-        <ul>
-            <li><a href="#">Introduzione</a></li>
-            <li><a href="#">Le Prime Scoperte</a></li>
-            <li><a href="#">Il Mistero</a></li>
-            <li><a href="#">Conclusioni</a></li>
-        </ul>
-    </div>
+    <div class="container">
+        <h1>Capitolo 3: Un Mondo Sconosciuto</h1>
+        <h2>La Ricerca di Nuove Frontiere</h2>
 
-    <div class="content">
-        <h1>Capitolo 3: La Scoperta del Mistero</h1>
-        <h2>Un Nuovo Enigma</h2>
+        <p>Nel momento in cui <span class="highlight">Elena</span> scoprì l'indizio nascosto tra le rovine antiche, capì che il suo viaggio stava per entrare in una nuova fase. Ogni passo la portava più vicino a risolvere il mistero che per secoli aveva sfidato gli esploratori del mondo.</p>
 
-        <p>Quando <span style="font-weight: bold; color: #e74c3c;">Andrea</span> si trovò davanti alla vecchia mappa, capì che stava per iniziare un'avventura mai vissuta prima. La mappa, strappata e consumata dal tempo, mostrava un luogo misterioso che nessuno aveva mai osato esplorare.</p>
-        
-        <p class="quote">"Ogni passo che faccio mi avvicina a qualcosa di più grande di quanto avrei mai potuto immaginare." - Andrea</p>
+        <p>Tra deserti infuocati e montagne ghiacciate, la sua determinazione era diventata il suo unico alleato. Con ogni scoperta, la storia di una civiltà perduta prendeva vita, e il legame tra il passato e il presente si faceva sempre più forte.</p>
 
-        <p>Con il cuore che batteva forte, Andrea decise di seguire le indicazioni della mappa, ignorando i pericoli che potevano nascondersi dietro ogni angolo. Si sentiva come un moderno esploratore, pronto a scoprire antichi segreti sepolti nel tempo.</p>
+        <div class="interactive" onclick="alert('Scopri di più sul mistero!')">Scopri di più sul Mistero</div>
 
-        <a href="#" class="cta">Continua il Viaggio</a>
+        <div class="image-container">
+            <img src="https://via.placeholder.com/1200x600" alt="Mistero e Avventura">
+        </div>
 
-        <img src="https://via.placeholder.com/1200x600" alt="Mistero e Avventura" class="image">
+        <a href="#" class="cta">Continua a leggere...</a>
     </div>
 </body>
 </html>
