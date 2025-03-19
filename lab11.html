@@ -1,0 +1,65 @@
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramma di Flusso</title>
+    <style>
+.container {
+            position: relative;
+            width: 300px;
+            height: 450px;
+            margin: 50px auto;
+            font-family: Arial, sans-serif;
+        }
+        .box, .diamond, .oval {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+            position: absolute;
+            background: rgb(255, 255, 255);
+        }
+        .box {
+            width: 100px;
+        }
+        .diamond {
+            width: 120px;
+       …  }
+        .line-marrone {
+            width: 2px;
+            height: 60px;
+            top: 200px;
+            left: 150px;
+            position: absolute;
+        }
+        .line-marrone-right {
+            width: 60px;
+            height: 2px;
+            top: 260px;
+            left: 150px;
+            position: absolute;
+        }
+        .line-end {
+            width: 2px;
+            height: 40px;
+            top: 320px;
+            left: 150px;
+            position: absolute;
+        }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box start">Start</div>
+        <div class="line line-start"></div>
+        <div class="diamond"><span>di che colore è il cavallo?</span></div>
+        <div class="line line-bianco"></div>
+        <div class="line line-bianco-down"></div>
+        <div class="box bianco">Bianco</div>
+        <div class="line line-marrone"></div>
+        <div class="line line-marrone-right"></div>
+        <div class="box marrone">Marrone</div>
+        <div class="line line-end"></div>
+        <div class="oval end">End</div>
+    </div>
+</body>
+</html>
