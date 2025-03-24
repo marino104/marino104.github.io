@@ -3,79 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capitolo 2</title>
+    <title>Capitolo 3 - non me lo ricordo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #121212;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #141E30, #243B55);
             color: white;
-            text-align: center;
-            padding: 50px;
+            margin: 0;
+            padding: 0;
         }
-        .title {
-            font-size: 2.5em;
-            opacity: 0;
-            transform: translateY(-20px);
-            animation: fadeInDown 1.5s ease-out forwards;
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 40px;
+            text-align: center;
         }
         .content {
-            opacity: 0;
-            animation: fadeIn 2s ease-in forwards;
-            animation-delay: 1.5s;
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
-        .more-content {
-            opacity: 0;
-            animation: fadeIn 2s ease-in forwards;
-            animation-delay: 3s;
+        article {
+            margin-bottom: 30px;
         }
-        .extra-content {
-            opacity: 0;
-            animation: fadeIn 2s ease-in forwards;
-            animation-delay: 4.5s;
-        }
-        .title2 {
-            font-size: 3em;
-            opacity: 0;
-            transform: translateY(-30px);
-            animation: fadeInDown 5s ease-out forwards;
-
-        }
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
         }
     </style>
 </head>
 <body>
-    <h1 class="title">Capitolo 2: L'Inizio del Viaggio</h1>
-    <h1 class="title2">HW</h1>
-    <p class="content">Il hardware (HW) è l'insieme delle componenti fisiche di un dispositivo elettronico,
-come un computer. Include elementi tangibili come il processore (CPU), la memoria (RAM),
-il disco rigido, la scheda madre, i dispositivi di input/output (tastiera, mouse, monitor)
-e altri componenti elettronici. In sintesi, è tutto ciò che puoi toccare in un sistema tecnologico.</p>
-    <h1 class="title2">SW</h1>
-    <p class="extra-content">Il software (SW) è l'insieme di programmi che fanno funzionare i dispositivi elettronici,
-come computer o smartphone. Può essere un sistema operativo, un'applicazione o strumenti per sviluppare altri programmi.</p>
+    <header>
+        <h1>Capitolo 3: non me lo ricordo</h1>
+        <nav>
+            <ul>
+                <li><a href="copertina.html">Home </a></li>
+                <li><a href="capitolo2.html">Capitolo 2</a></li>
+                <li><a href="Capitolo4.html">capitolo 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="content">
+            <article>
+                <h2>blabla</h2>
+                <p>ebeochqoucbouqcebhuqobc</p>
+            </article>
+
+            <article>
+                <h2>L'incontro del minosse</h2>
+                <p>hwqceiwrvwhfvwvbkfj</p>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Il Mio Libro Online</p>
+    </footer>
 </body>
 </html>
-<br>
-  <a href="copertina.html"> home</a>
-<br>
-  <a href="capitolo3.html"> vai al capitlo seguente</a>
-<br>
-  <a href="capitolo1.html"> torna indietro</a>
-
