@@ -2,88 +2,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capitolo 3 - non me lo ricordo</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Capitolo 3 - le diverse codifiche</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #141E30, #243B55);
-            color: white;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.6;
         }
         header {
-            text-align: center;
+            background: #1e90ff;
             padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
+            text-align: center;
+            font-size: 24px;
             font-weight: bold;
+            color: white;
         }
         main {
-            padding: 40px;
-            text-align: center;
-        }
-        .content {
             max-width: 800px;
-            margin: auto;
-            background: rgba(255, 255, 255, 0.1);
+            margin: 20px auto;
             padding: 20px;
+            background: #222;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
         }
-        article {
-            margin-bottom: 30px;
+        h1, h2 {
+            color: #1e90ff;
         }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: rgba(0, 0, 0, 0.8);
+        ul {
+            list-style-type: square;
+        }
+        p, li {
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Capitolo 3: non me lo ricordo</h1>
-        <nav>
-            <ul>
-                <li><a href="copertina.html">Home </a></li>
-                <li><a href="capitolo2.html">Capitolo 2</a></li>
-                <li><a href="Capitolo4.html">capitolo 4</a></li>
-            </ul>
-        </nav>
-    </header>
+    <header>Capitolo 3: le diverse codifiche</header>
     
     <main>
-        <section class="content">
-            <article>
-                <h2>blabla</h2>
-                <p>ebeochqoucbouqcebhuqobc</p>
-            </article>
+        <h2>1.1 testi</h2>
+        <p>I caratteri (lettere, numeri, simboli) vengono rappresentati da codici numerici. Ad esempio, la codifica ASCII assegna un numero a ciascun carattere; la lettera 'A' è rappresentata dal numero 65. . </p>
+        
+        <h2>1.2 immagini</h2>
+        <ul>
+            <li><strong>le imagini:</strong>  Le immagini digitali sono composte da pixel, ciascuno con un colore specifico. Le codifiche come JPEG o PNG comprimono questi dati per ridurre le dimensioni del file mantenendo una buona qualità visiva.</li>
 
-            <article>
-                <h2>L'incontro del minosse</h2>
-                <p>hwqceiwrvwhfvwvbkfj</p>
-            </article>
-        </section>
+        </ul>
+        
+        <h2>1.3 audio</h2>
+        <p>I suoni vengono convertiti in segnali digitali attraverso campionamento e quantizzazione. Formati come MP3 comprimono questi dati per facilitare l'archiviazione e la trasmissione
+</p>
+        
+        <h2>1.4 numeri</h2>
+        <p>I numeri possono essere rappresentati in vari formati binari all'interno del computer, a seconda che siano interi, decimali o in virgola mobile. Esistono anche tecniche mnemoniche, come la conversione fonetica, che aiutano a memorizzare sequenze numeriche trasformandole in suoni o parole più facili da ricordare.</p>
+        <h2>1.5 video</h2>
+         <p> I video sono una sequenza di immagini (frame) accompagnate da audio. Codifiche come H.264 o MPEG-4 comprimono questi dati per garantire una riproduzione fluida e una buona qualità, riducendo al contempo le dimensioni del file.</p>
+        <span id="tabella">
+ <table>
+	<tr>
+		<th>
+		IMMAGINE
+		</th>
+  	<th>
+RISOLUZIONE
+		</th>
+  	<th>
+PROFONDITA' 
+    BIT
+		</th>
+  	<th>
+			OCCUPAZIONE DI MEMORIA
+		</th>
+	</tr>
+	<tr>
+		<td>
+			B/N
+		</td>
+		<td>
+			1024X740
+		</td>
+		<td>
+			1
+		</td>
+		<td>
+			1024X740X1
+		</td>
+	</tr>
+	<tr>
+		<td>
+GRIGIO
+		</td>
+		<td>
+1024X740
+		</td>
+		<td>
+8
+		</td>
+		<td>
+1024X740X8bit
+		</td>
+		
+	</tr>
+	 <tr>
+		<td>
+RADIOGRAFIE
+		</td>
+		<td>
+1024X740
+		</td>
+		<td>
+16
+		</td>
+		<td>
+1024X740X16bit
+		</td>
+		
+	</tr>
+	 
+<tr>
+		<td>
+COLORE (RGB)
+		</td>
+		<td>
+1024X740
+		</td>
+		<td>
+24
+		</td>
+		<td>
+1024X740X24bit
+		</td>
+	 <tr>
+		<td>
+COLORE (AQ)
+		</td>
+		<td>
+1024X740
+		</td>
+		<td>
+			48
+		</td>
+		<td>
+1024X740X48bit
+		</td>
+		
+	</tr>
+</table>
+
+</span>
     </main>
-    
-    <footer>
-        <p>&copy; 2025 Il Mio Libro Online</p>
-    </footer>
 </body>
-</html>
 
+</html>
+  <a href="copertina.html"> home</a>
+<br>
+  <a href="capitolo2.html"> vai al capitolo seguente</a>
