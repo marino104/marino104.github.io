@@ -4,11 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Capitolo 1 - Introduzione all'Informatica</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body {
-      font-family: 'Arial', sans-serif;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
       background-color: #121212;
       color: #fff;
       line-height: 1.6;
@@ -16,17 +21,47 @@
 
     header {
       background: #1e90ff;
-      padding: 20px;
+      padding: 60px 20px 20px;
       text-align: center;
       font-size: 28px;
       font-weight: bold;
       color: white;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    }
+
+    nav {
+      background: #0f0f0f;
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav .logo {
+      font-size: 20px;
+      color: #1e90ff;
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #1e90ff;
     }
 
     main {
       max-width: 900px;
-      margin: 30px auto;
+      margin: 140px auto 40px;
       padding: 30px;
       background: #1a1a1a;
       border-radius: 12px;
@@ -58,75 +93,96 @@
 
     .nav-links {
       text-align: center;
-      margin: 30px 0 10px;
+      margin-top: 30px;
     }
 
     .nav-links a {
       color: #1e90ff;
       font-size: 18px;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 15px;
     }
 
     .nav-links a:hover {
       text-decoration: underline;
     }
+
+    footer {
+      background: #0f0f0f;
+      color: #aaa;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 14px;
+      border-top: 1px solid #333;
+    }
+
+    footer i {
+      color: #1e90ff;
+    }
   </style>
 </head>
 
 <body>
+  <nav>
+    <div class="logo"><i class="fa-solid fa-laptop-code"></i> Informatica</div>
+    <div>
+      <a href="copertina.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="capitolo2.html"><i class="fa-solid fa-arrow-right"></i> Capitolo 2</a>
+    </div>
+  </nav>
+
   <header>Capitolo 1: Introduzione all'Informatica</header>
 
   <main>
     <h2>1.1 La Scienza</h2>
-    <img src="https://via.placeholder.com/800x300?text=Scienza+Informatica" alt="Scienza Informatica">
-    <p>L'informatica come scienza si occupa dello studio dei sistemi per l’elaborazione delle informazioni, combinando matematica, logica e ingegneria. Include diverse aree:</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Turing_machine_tape.svg" alt="Concetto di computazione - Macchina di Turing">
+    <p>L'informatica come scienza si occupa dello studio dei sistemi per l’elaborazione delle informazioni...</p>
     <ul>
-      <li><strong>Algoritmi e Strutture Dati:</strong> Progetta metodi per risolvere problemi in modo efficiente.</li>
-      <li><strong>Teoria della Computazione:</strong> Analizza i limiti di ciò che i computer possono calcolare.</li>
-      <li><strong>Intelligenza Artificiale:</strong> Sviluppa sistemi in grado di "pensare" e risolvere compiti complessi.</li>
-      <li><strong>Sicurezza Informatica:</strong> Protegge i sistemi da minacce e accessi non autorizzati.</li>
-      <li><strong>Scienza dei Dati:</strong> Estrae conoscenza da grandi quantità di dati.</li>
-      <li><strong>Interazione Uomo-Macchina:</strong> Migliora l’esperienza d’uso con interfacce intuitive.</li>
+      <li><strong>Algoritmi e Strutture Dati</strong></li>
+      <li><strong>Teoria della Computazione</strong></li>
+      <li><strong>Intelligenza Artificiale</strong></li>
+      <li><strong>Sicurezza Informatica</strong></li>
+      <li><strong>Scienza dei Dati</strong></li>
+      <li><strong>Interazione Uomo-Macchina</strong></li>
     </ul>
 
     <h2>1.2 Storia dell'Informatica</h2>
-    <img src="https://via.placeholder.com/800x300?text=Storia+Informatica" alt="Storia dell'Informatica">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/AnalyticalMachine_Babbage_London.jpg" alt="Macchina analitica di Babbage">
     <ul>
-      <li><strong>XIX secolo:</strong> La storia dell'informatica inizia con i primi strumenti di calcolo, come l'abaco, ma prende forma nel XVII secolo con le macchine meccaniche di Blaise Pascal e Gottfried Leibniz. Nel XIX secolo, Charles Babbage progetta la "macchina analitica," un prototipo di computer moderno, mentre Ada Lovelace scrive il primo algoritmo.
-        <br><br>
-        Il XX secolo segna la svolta: Alan Turing introduce i concetti teorici di computazione, mentre, durante la Seconda Guerra Mondiale, vengono sviluppati i primi computer elettronici per scopi militari. Negli anni '50 e '60, il computer si evolve da macchina ingombrante a strumento per università e aziende. Con l'invenzione del microprocessore negli anni '70, nascono i personal computer, portando la tecnologia informatica nelle case e dando vita all'era digitale che viviamo oggi.
-      </li>
+      <li><strong>XIX secolo:</strong> [...] Alan Turing introduce i concetti teorici di computazione [...] personal computer, portando la tecnologia informatica nelle case.</li>
     </ul>
 
     <h2>1.3 Aspetti dell'informatica</h2>
-    <img src="https://via.placeholder.com/800x300?text=Aspetti+Informatica" alt="Aspetti dell'informatica">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Artificial_Intelligence_%26_AI_%26_Machine_Learning_-_30212411048.jpg" alt="Intelligenza Artificiale e Machine Learning">
     <p>L'informatica si articola in diversi aspetti fondamentali:</p>
     <ul>
-      <li><strong>Algoritmi e Strutture Dati:</strong> Studiano metodi per risolvere problemi e organizzare le informazioni in modo efficiente, rendendo il software veloce e preciso.</li>
-      <li><strong>Teoria della Computazione:</strong> Esplora i limiti di ciò che può essere calcolato e le risorse necessarie, definendo i confini della computazione.</li>
-      <li><strong>Intelligenza Artificiale (IA):</strong> Mira a creare sistemi capaci di svolgere compiti complessi, come riconoscimento di immagini e comprensione del linguaggio, grazie al machine learning.</li>
-      <li><strong>Sicurezza Informatica:</strong> Si occupa della protezione dei dati e dei sistemi dagli attacchi e accessi non autorizzati.</li>
-      <li><strong>Ingegneria del Software:</strong> Stabilisce metodi per progettare, sviluppare e mantenere software di qualità e funzionale.</li>
-      <li><strong>Interazione Uomo-Macchina (HCI):</strong> Progetta interfacce intuitive e accessibili per migliorare l’esperienza utente.</li>
-      <li><strong>Scienza dei Dati:</strong> Analizza grandi quantità di dati per estrarre conoscenza e prendere decisioni informate.</li>
+      <li><strong>Algoritmi e Strutture Dati</strong></li>
+      <li><strong>Teoria della Computazione</strong></li>
+      <li><strong>Intelligenza Artificiale (IA)</strong></li>
+      <li><strong>Sicurezza Informatica</strong></li>
+      <li><strong>Ingegneria del Software</strong></li>
+      <li><strong>Interazione Uomo-Macchina (HCI)</strong></li>
+      <li><strong>Scienza dei Dati</strong></li>
     </ul>
 
     <h2>1.4 Comportamento in rete</h2>
-    <img src="https://via.placeholder.com/800x300?text=Comportamento+in+Rete" alt="Comportamento in Rete">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Cyber_security.png/800px-Cyber_security.png" alt="Sicurezza informatica e comportamento digitale">
     <p>Il comportamento in rete si riferisce a come ci si comporta online, seguendo alcune norme di rispetto, sicurezza e consapevolezza digitale:</p>
     <ul>
-      <li><strong>Rispetto:</strong> Comunicare in modo educato, evitando insulti o linguaggio offensivo, e rispettare le opinioni altrui.</li>
-      <li><strong>Privacy:</strong> Proteggere le proprie informazioni personali, condividendo solo ciò che è strettamente necessario e impostando adeguatamente la privacy sui social.</li>
-      <li><strong>Sicurezza:</strong> Evitare di cliccare su link sospetti, usare password sicure e aggiornare regolarmente i software per prevenire attacchi informatici.</li>
-      <li><strong>Condivisione responsabile:</strong> Verificare l'affidabilità delle fonti prima di condividere informazioni o notizie per evitare la diffusione di fake news.</li>
+      <li><strong>Rispetto</strong></li>
+      <li><strong>Privacy</strong></li>
+      <li><strong>Sicurezza</strong></li>
+      <li><strong>Condivisione responsabile</strong></li>
     </ul>
 
     <div class="nav-links">
-      <a href="copertina.html">🏠 Home</a> |
-      <a href="capitolo2.html">📖 Vai al Capitolo Seguente</a>
+      <a href="copertina.html"><i class="fa-solid fa-arrow-left"></i> Torna alla Home</a>
+      <a href="capitolo2.html">Vai al Capitolo 2 <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </main>
+
+  <footer>
+    <p>&copy; 2025 Introduzione all'Informatica. Creato con <i class="fa-solid fa-heart"></i> da [Te].</p>
+  </footer>
 </body>
 </html>
-
