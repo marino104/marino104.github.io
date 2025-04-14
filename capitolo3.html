@@ -1,65 +1,147 @@
+
+<!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capitolo 3 - le diverse codifiche</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #fff;
-            line-height: 1.6;
-        }
-        header {
-            background: #1e90ff;
-            padding: 20px;
-            text-align: center;
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-        }
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #222;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-        }
-        h1, h2 {
-            color: #1e90ff;
-        }
-        ul {
-            list-style-type: square;
-        }
-        p, li {
-            font-size: 18px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Capitolo 3 - le diverse codifiche</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e90ff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: #222;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+
+    h2 {
+      color: #1e90ff;
+    }
+
+    p, li {
+      font-size: 18px;
+    }
+
+    ul {
+      list-style-type: square;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      color: white;
+    }
+
+    th, td {
+      padding: 10px;
+      border: 1px solid #fff;
+      text-align: center;
+    }
+
+    th {
+      background-color: #1e90ff;
+    }
+
+    a {
+      display: inline-block;
+      margin: 20px;
+      text-decoration: none;
+      color: #1e90ff;
+      font-size: 18px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>Capitolo 3: le diverse codifiche</header>
-    
-    <main>
-        <h2>1.1 testi</h2>
-        <p>I caratteri (lettere, numeri, simboli) vengono rappresentati da codici numerici. Ad esempio, la codifica ASCII assegna un numero a ciascun carattere; la lettera 'A' è rappresentata dal numero 65. . </p>
-        
-        <h2>1.2 immagini</h2>
-        <ul>
-            <li><strong>le imagini:</strong>  Le immagini digitali sono composte da pixel, ciascuno con un colore specifico. Le codifiche come JPEG o PNG comprimono questi dati per ridurre le dimensioni del file mantenendo una buona qualità visiva.</li>
+  <header>Capitolo 3: le diverse codifiche</header>
+  <main>
+    <h2>1.1 Testi</h2>
+    <p>I caratteri (lettere, numeri, simboli) vengono rappresentati da codici numerici. Ad esempio, la codifica ASCII assegna un numero a ciascun carattere; la lettera 'A' &egrave; rappresentata dal numero 65.</p>
 
-        </ul>
-        
-        <h2>1.3 audio</h2>
-        <p>I suoni vengono convertiti in segnali digitali attraverso campionamento e quantizzazione. Formati come MP3 comprimono questi dati per facilitare l'archiviazione e la trasmissione
-</p>
-        
-        <h2>1.4 numeri</h2>
-        <p>I numeri possono essere rappresentati in vari formati binari all'interno del computer, a seconda che siano interi, decimali o in virgola mobile. Esistono anche tecniche mnemoniche, come la conversione fonetica, che aiutano a memorizzare sequenze numeriche trasformandole in suoni o parole più facili da ricordare.</p>
-        <h2>1.5 video</h2>
-         <p> I video sono una sequenza di immagini (frame) accompagnate da audio. Codifiche come H.264 o MPEG-4 comprimono questi dati per garantire una riproduzione fluida e una buona qualità, riducendo al contempo le dimensioni del file.</p>
+    <h2>1.2 Immagini</h2>
+    <p>Le immagini digitali sono fatte da piccoli quadratini chiamati pixel. Ogni pixel ha un colore. I formati come JPEG o PNG servono per ridurre il peso dell'immagine mantenendo una buona qualit&agrave;.</p>
+
+    <h2>1.3 Audio</h2>
+    <p>I suoni vengono trasformati in numeri grazie a due passaggi: campionamento (si prende il suono in tanti piccoli pezzi) e quantizzazione (si trasforma ogni pezzo in un numero). MP3 &egrave; un formato che riduce la grandezza del file audio.</p>
+
+    <h2>1.4 Numeri</h2>
+    <p>Nel computer, i numeri vengono scritti in binario (solo 0 e 1). Possono essere numeri interi, decimali o con la virgola. Esistono anche trucchi per ricordare meglio i numeri, trasformandoli in parole o suoni.</p>
+
+    <h2>1.5 Video</h2>
+    <p>I video sono un insieme di immagini (chiamate frame) mostrate una dopo l'altra, con l'audio. I formati H.264 o MPEG-4 aiutano a rendere il video pi&ugrave; leggero, mantenendo una buona qualit&agrave; e fluidit&agrave;.</p>
+
+    <h2>Tabella: Occupazione di memoria</h2>
+    <table>
+      <tr>
+        <th>Immagine</th>
+        <th>Risoluzione</th>
+        <th>Profondit&agrave; Bit</th>
+        <th>Occupazione di memoria</th>
+      </tr>
+      <tr>
+        <td>B/N</td>
+        <td>1024x740</td>
+        <td>1</td>
+        <td>1024x740x1</td>
+      </tr>
+      <tr>
+        <td>Grigio</td>
+        <td>1024x740</td>
+        <td>8</td>
+        <td>1024x740x8 bit</td>
+      </tr>
+      <tr>
+        <td>Radiografie</td>
+        <td>1024x740</td>
+        <td>16</td>
+        <td>1024x740x16 bit</td>
+      </tr>
+      <tr>
+        <td>Colore (RGB)</td>
+        <td>1024x740</td>
+        <td>24</td>
+        <td>1024x740x24 bit</td>
+      </tr>
+      <tr>
+        <td>Colore (AQ)</td>
+        <td>1024x740</td>
+        <td>48</td>
+        <td>1024x740x48 bit</td>
+      </tr>
+    </table>
+
+    <a href="copertina.html">🏠 Torna alla Home</a>
+    <a href="capitolo2.html">⬅️ Capitolo 2</a>
+    <a href="capitolo4.html">➡️ Capitolo 4</a>
+  </main>
+</body>
+</html>
+
+
         <span id="tabella">
  <table>
 	<tr>
