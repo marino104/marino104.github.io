@@ -1,108 +1,169 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <title>Le Reti</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Capitolo - Le Reti Informatiche</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
+    * {
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #121212;
+      color: #fff;
+      line-height: 1.6;
     }
 
     header {
-      background-color: #0066cc;
-      color: white;
-      padding: 20px;
+      background: #1e90ff;
+      padding: 60px 20px 20px;
       text-align: center;
+      font-size: 28px;
+      font-weight: bold;
+      color: white;
     }
 
     nav {
-      background-color: #e6f0ff;
-      padding: 15px;
+      background: #0f0f0f;
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.7);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    nav a {
-      margin: 10px;
-      text-decoration: none;
-      color: #0066cc;
+    nav .logo {
+      font-size: 20px;
+      color: #1e90ff;
       font-weight: bold;
     }
 
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+
     nav a:hover {
-      text-decoration: underline;
+      color: #1e90ff;
     }
 
     main {
-      padding: 20px;
+      max-width: 900px;
+      margin: 140px auto 40px;
+      padding: 30px;
+      background: #1a1a1a;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+
+    h1, h2 {
+      color: #1e90ff;
+      margin-bottom: 10px;
+    }
+
+    p, li {
+      font-size: 18px;
+      margin-bottom: 10px;
     }
 
     section {
-      background-color: white;
-      padding: 15px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
     }
 
     footer {
+      background: #0f0f0f;
+      color: #aaa;
       text-align: center;
-      padding: 10px;
-      background-color: #cce0ff;
+      padding: 20px 10px;
+      font-size: 14px;
+      border-top: 1px solid #333;
+    }
+
+    .nav-links {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .nav-links a {
+      color: #1e90ff;
+      font-size: 18px;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
-
-  <header>
-    <h1>Le Reti Informatiche</h1>
-  </header>
-
   <nav>
-    <a href="cosa-e-una-rete.html">Cos'è una rete</a>
-    <a href="pan.html">Personal Area Network (PAN)</a>
-    <a href="lan.html">LAN</a>
-    <a href="wan.html">WAN</a>
-    <a href="gan.html">GAN</a>
-    <a href="internet.html">Architettura e Servizi Internet</a>
+    <div class="logo"><i class="fa-solid fa-network-wired"></i> Le Reti</div>
+    <div>
+      <a href="capitolo1.html"><i class="fa-solid fa-arrow-left"></i> Capitolo 1</a>
+      <a href="capitolo3.html"><i class="fa-solid fa-arrow-right"></i> Capitolo 3</a>
+    </div>
   </nav>
+
+  <header>Capitolo: Le Reti Informatiche</header>
 
   <main>
     <section>
-      <h2>Cos'è una rete</h2>
-      <p>Una rete è un insieme di dispositivi collegati tra loro per condividere risorse e informazioni.</p>
+      <h2>1) Cos'è una rete</h2>
+      <p>Una rete è un insieme di dispositivi collegati tra loro per condividere risorse e informazioni. Può includere computer, stampanti, smartphone, server e altri dispositivi elettronici.</p>
     </section>
 
     <section>
-      <h2>Personal Area Network (PAN)</h2>
-      <p>È una rete molto piccola usata per collegare dispositivi personali come smartphone, tablet, e computer.</p>
+      <h2>2) Personal Area Network (PAN)</h2>
+      <p>È una rete molto piccola usata per collegare dispositivi personali come smartphone, tablet, cuffie bluetooth e computer, di solito nel raggio di pochi metri.</p>
     </section>
 
     <section>
-      <h2>LAN (Local Area Network)</h2>
-      <p>Una LAN collega dispositivi all'interno di un'area limitata come una casa, una scuola o un ufficio.</p>
+      <h2>3) LAN (Local Area Network)</h2>
+      <p>Una LAN collega dispositivi all'interno di un'area limitata come una casa, una scuola o un ufficio. Usa cavi Ethernet o Wi-Fi per il collegamento.</p>
     </section>
 
     <section>
-      <h2>WAN (Wide Area Network)</h2>
-      <p>Una WAN collega reti locali su grandi distanze, come Internet.</p>
+      <h2>4) WAN (Wide Area Network)</h2>
+      <p>Una WAN collega reti locali su grandi distanze, come tra città o stati. L’esempio più conosciuto di WAN è Internet.</p>
     </section>
 
     <section>
-      <h2>GAN (Global Area Network)</h2>
-      <p>Una GAN è una rete globale che collega più WAN, ed è usata per comunicazioni su scala mondiale.</p>
+      <h2>5) GAN (Global Area Network)</h2>
+      <p>Una GAN è una rete globale che collega più WAN, ed è usata per comunicazioni su scala mondiale. Serve per collegare continenti, aziende internazionali e grandi organizzazioni.</p>
     </section>
 
     <section>
-      <h2>Architettura e Servizi di Internet</h2>
-      <p>Internet funziona grazie a protocolli, server e client che permettono l’accesso a servizi come email, siti web, e social media.</p>
+      <h2>Architettura e funzionamento della rete Internet e i suoi servizi</h2>
+      <p>Internet funziona grazie a una struttura a livelli e protocolli di comunicazione (come TCP/IP). Include:</p>
+      <ul>
+        <li><strong>Client e Server:</strong> i client chiedono informazioni (es. un browser), i server rispondono (es. un sito web).</li>
+        <li><strong>DNS:</strong> traduce gli indirizzi web in numeri IP.</li>
+        <li><strong>Servizi Internet:</strong> come email, social network, cloud, siti web, e-commerce, streaming e altro.</li>
+      </ul>
     </section>
+
+    <div class="nav-links">
+      <a href="capitolo1.html"><i class="fa-solid fa-arrow-left"></i> Capitolo 1</a>
+      <a href="capitolo3.html">Capitolo 3 <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
   </main>
 
   <footer>
-    <p>© 2025 - Le Reti Informatiche</p>
+    <p>© 2025 Le Reti Informatiche. <i class="fa-solid fa-wifi"></i></p>
   </footer>
-
 </body>
 </html>
