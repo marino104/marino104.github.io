@@ -3,7 +3,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 # Inserisci il tuo token ottenuto da BotFather
-TOKEN = "INSERISCI_IL_TUO_TOKEN"
+TOKEN = "7378196063:AAFlELp_RYsPEPsbLasQBpweHZ_PbdurzgE"
 
 # Dizionario dei film organizzati per genere
 film_catalogo = {
